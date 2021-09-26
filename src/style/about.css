@@ -1,0 +1,30 @@
+.a-box{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.a-m{
+    margin: 0 0 0 20px;
+    line-height: 30px;
+}
+.pic{
+    width: 340px;
+}
+
+.sign{
+    width: 200px;
+    margin-left: 30px;
+}
+
+@media only screen  and (max-width:600px){
+    .a-box{
+        display: block;
+    }
+    .a-m{
+        margin: 20px 0 0  0;
+        font-size: 17px;
+    }
+    .pic{
+        width: 100%;
+    }
+}

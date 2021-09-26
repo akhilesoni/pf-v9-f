@@ -1,0 +1,39 @@
+.contact-form{
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.c-in{
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    outline: none;
+}
+.contact-form form label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.c-sub{
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: gray;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.c-sub:hover{
+    color: rgb(93, 93, 93);
+}
+#msg{
+    height: 100px;
+}

@@ -1,0 +1,88 @@
+.wr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.project{
+    margin: 20px 0;
+}
+
+.p-n{
+    font-weight: 600;
+}
+.p-c, .p-s{
+    font-size: 14px;
+}
+
+.p-s{
+    background-color: var(--border);
+    padding: 2px 5px ;
+    border-radius: 5px;
+}
+
+.p-c{
+    color: gray;
+}
+
+.p-d{
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.git{
+    background-color: var(--black);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.vis{
+    background-color: var(--border);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.git:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.vis:hover{
+    background-color: rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.wr a{
+    color: black;
+    text-decoration: none;
+}
+
+.m-d-v{
+    display: block;
+}
+
+.m-d{
+    display: none;
+}
+
+.s-m{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+    cursor:pointer;
+    margin-top: 10px;
+}
+
+.s-l{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    color: rgb(167, 109, 109);
+}

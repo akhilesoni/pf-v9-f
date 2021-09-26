@@ -1,0 +1,78 @@
+.s-in{
+    width: 96%;
+    border: 1px solid var(--border);
+    padding: 10px 2%;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+.s-ic{
+    position: absolute;
+    right: 10px;
+    top:8px;
+}
+
+.b-h{
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.in-wrapper{
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.b-wr{
+    display: flex;
+}
+.b-d{
+    color: gray;
+}
+
+.b-v{
+    background-color: var(--border);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+
+.b-l-r {
+    color: red;
+    background-color: var(--border);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.b-l{
+    color: gray;
+    background-color: var(--border);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+.b-l:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.b-c{
+    margin: 30px 0;
+    font-size: 21px;
+    line-height: 27px;
+}
+
+.profile-icon{
+    width: 48px;
+    border-radius: 50%;
+}
+
+.info-box{
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:600px){
+    .b-h{
+        font-size: 34px;
+    }
+}
