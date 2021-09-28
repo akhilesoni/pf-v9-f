@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import '../style/blogs.css'
 import Blog from "../components/blog";
 import { URL } from "../config";
+import Pbar from "../components/pbar";
 function Blogs(){
 
     const [blogs,setBlogs] = useState([])
-
+    const [pbar,setPbar] = useState(true)
     const url_blog = URL + 'blogs'
 
     useEffect(()=>{
@@ -16,6 +17,7 @@ function Blogs(){
     const getBlogs = ()=>{
         fetch(url_blog).then(res=>res.json()).then(data=>{
             setBlogs(data)
+            setPbar(false)
         })
     }
 
@@ -26,6 +28,9 @@ function Blogs(){
             {blogs.map(blog=>(
                 <Blog key={blog.id} blog={blog}/>
             ))}
+            <div className={pbar?'pbar':'pbar-b'}>
+               <Pbar/>
+            </div>
         </div>
     )
 }

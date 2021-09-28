@@ -7,6 +7,10 @@
 
 .project{
     margin: 20px 0;
+    background-color: var(--lg);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 10px 20px;
 }
 
 .p-n{
@@ -27,7 +31,7 @@
 }
 
 .p-d{
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 14px;
 }
 
@@ -77,12 +81,13 @@
     color: rgb(61, 61, 61);
     cursor:pointer;
     margin-top: 10px;
+    
 }
 
 .s-l{
     font-size: 13px;
     font-weight: 600;
-    margin-top: 10px;
-    cursor: pointer;
-    color: rgb(167, 109, 109);
+    color: rgb(61, 61, 61);
+    cursor:pointer;
+    margin-top: 20px;
 }

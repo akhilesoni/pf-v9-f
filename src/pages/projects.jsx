@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import Pbar from "../components/pbar";
 import Project from "../components/project";
 import { URL } from "../config";
 import '../style/project.css'
+import '../App.css'
 function Projects(){
 
     const [projects,setProjects] = useState([])
+    const [pbar,setPbar] = useState(true)
 
     const url = URL+'projects'
 
@@ -14,7 +17,10 @@ function Projects(){
 
 
     const getProjects = ()=>{
-        fetch(url).then(res=>res.json()).then(data=>setProjects(data))
+        fetch(url).then(res=>res.json()).then(data=>{
+            setProjects(data)
+            setPbar(false)
+        })
     }
     return(
         <div className='main'>
@@ -22,6 +28,9 @@ function Projects(){
             {projects.map(project=>(
                 <Project project={project}/>
             ))}
+            <div className={pbar?'pbar':'pbar-b'}>
+               <Pbar/>
+            </div>
         </div>
     )
 }

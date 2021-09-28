@@ -45,16 +45,38 @@
     height: 2px;
     background-color: gray;
     margin: 3px;
+    transition: 0.3s;
 }
 
+.lbar{
+    width: 23px;
+    height: 2px;
+    background-color: gray;
+    transform: rotateZ(45deg);
+    transition: 0.3s;
+
+}
+.rbar{
+    width: 23px;
+    height: 2px;
+    transition: 0.3s;
+
+    background-color: gray;
+    transform: rotateZ(-45deg);
+}
 
 
 @media only screen and (max-width:600px){
     .links{
         margin-top: 10px;
-        width: 50%;
+        width: 100%;
+        padding: 20px;
         display: flex;
         flex-direction: column;
+        position: fixed;
+        left:0;
+        z-index: -1;
+        background-color: white;
     }
     .links li{
         font-size: 14px;
@@ -84,7 +106,8 @@
     }
     
     .ls-b{
-        display: none;
+        transform: translateX(-200px);
+        opacity: 0;
     }
 
 

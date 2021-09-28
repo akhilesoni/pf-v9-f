@@ -15,9 +15,9 @@ function Nav(props){
             <div onClick={toggleDrop} className='nav'>
                 <p className='logo'>{props.heading}</p>
                 <div className='m-o' onClick={toggleDrop}>
-                    <div className='bar'></div>
-                    <div className='bar'></div>
-                    <div className='bar'></div>
+                    <div className={isDrop?'lbar':'bar'}></div>
+                    <div className={isDrop?'':'bar'}></div>
+                    <div className={isDrop?'rbar':'bar'}></div>
                 </div>
                 <ul className={isDrop?'links ls-d':'links ls-b'}>
                     {props.links.map(link=>(
