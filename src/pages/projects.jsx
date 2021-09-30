@@ -13,7 +13,10 @@ function Projects(){
 
     useEffect(()=>{
         getProjects()
-    })
+        return ()=>{
+            setProjects([])
+        }
+    },[])
 
 
     const getProjects = ()=>{

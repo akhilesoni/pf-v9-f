@@ -13,7 +13,9 @@ function Nav(props){
         <div>
             <div onClick={toggleDrop} className={isDrop?'cov-v':'c'}></div>
             <div onClick={toggleDrop} className='nav'>
-                <p className='logo'>{props.heading}</p>
+                <Link style={{color:'black',textDecoration:'none'}} to={props.head.url}>
+                    <p className='logo'>{props.head.title}</p>
+                </Link>
                 <div className='m-o' onClick={toggleDrop}>
                     <div className={isDrop?'lbar':'bar'}></div>
                     <div className={isDrop?'':'bar'}></div>

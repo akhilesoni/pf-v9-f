@@ -106,8 +106,9 @@
     }
     
     .ls-b{
-        transform: translateX(-200px);
+        transform: translateX(-1000px);
         opacity: 0;
+        visibility: hidden;
     }
 
 

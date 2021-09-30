@@ -4,7 +4,7 @@
 
 .message-content{
     font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: white;
     padding: 10px 20px;
     border-radius: 0px 10px 10px 10px;
     border-bottom: 1px solid var(--border);
@@ -14,7 +14,7 @@
 }
 .m-wr{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: white;
     width: fit-content;
     padding: 10px 20px;
     border-radius:10px 10px 0px 0 ;

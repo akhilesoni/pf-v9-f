@@ -81,7 +81,7 @@ export default function AddBlog(){
         })
     }
     return (
-        <div className='ad-c-m main'>
+        <div className='ad-c-m'>
             <p className={isDis?'n-d n-p':'n-b n-p'}>{notice}</p>
             <p className='h'>Add Blog</p>
             <form className='adb-form' onSubmit={submitBlog}>

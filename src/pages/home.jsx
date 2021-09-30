@@ -15,7 +15,7 @@ function Home(){
     useEffect(()=>{
         getBlogs()
         getProjects()
-    })
+    },[])
 
 
     const getBlogs = ()=>{
@@ -31,7 +31,7 @@ function Home(){
         
     }
     return(
-        <div className='main'>
+        <div className='main' style={{backgroundColor:'white'}}>
             <div className='desc'>
                 <p className='ht'>
                     Hi friends ! I am Akhlesh. I'm a software Engineer and simplistic. <br />

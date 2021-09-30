@@ -11,7 +11,11 @@ function Blogs(){
 
     useEffect(()=>{
         getBlogs()
-    })
+        console.log('jj')
+        return ()=>{
+            setBlogs([])
+        }
+    },[])
 
 
     const getBlogs = ()=>{

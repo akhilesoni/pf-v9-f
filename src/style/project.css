@@ -7,7 +7,7 @@
 
 .project{
     margin: 20px 0;
-    background-color: var(--lg);
+    background-color: white;
     border: 1px solid var(--border);
     border-radius: 7px;
     padding: 10px 20px;

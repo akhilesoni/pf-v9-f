@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Contact from "../components/contact";
 import { URL } from "../config";
 import profile from '../images/b&wme.jpeg'
 export default function Blog(props){
@@ -21,18 +22,20 @@ export default function Blog(props){
         
     }
     return (
-        <div className='main'>
+        <div className='main'  style={{backgroundColor:'white'}}>
             <p class='b-h'>{blog.title}</p>
             <div className='b-wr'>
                 <img src={profile} alt="me" className='profile-icon' />
                 <div className='info-box'>
-                    <p style={{fontWeight:'600'}}>Akhlesh Soni</p>
+                    <p style={{fontWeight:'600',marginBottom:'5px'}}>Akhlesh Soni</p>
                     <p style={{color:'gray'}}>{blog.date} · {blog.read_time}</p>
                 </div>
             </div>
             <p className='b-c'>
                 {blog.content}
             </p>
+            <p>If You Liked It Please Give Feedback!</p>
+            <Contact/>
         </div>
     )
 }

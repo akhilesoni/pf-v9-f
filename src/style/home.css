@@ -2,7 +2,7 @@
 
 .ht{
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 15px 0;
     color: var(--black);
 }
@@ -12,7 +12,6 @@
 }
 
 .blog-p{
-    margin-top: 20px;
     padding-top:20px;
     margin-bottom: 20px;
 }

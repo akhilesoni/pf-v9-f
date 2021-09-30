@@ -12,10 +12,15 @@ import Projects from "./projects";
 
 export default function Landing(props){
 
+
+    const head = {
+        title:'Akhlesh Soni',
+        url:'/'
+    }
     const links = [
         {
-            title:'Home',
-            url:'/'
+            title:'Projects',
+            url:'/projects'
         },
         {
             title:'About',
@@ -32,12 +37,11 @@ export default function Landing(props){
         
     ]
 
-    const heading = 'Akhlesh Soni'
 
     return (
         <div>
             <Router>
-                <Nav links={links} heading={heading}/>
+                <Nav head={head} links={links}/>
                 <Switch>
                     <Route path='/' exact component={Home}/>
                     <Route path='/about' component={About}/>

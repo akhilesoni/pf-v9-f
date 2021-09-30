@@ -26,7 +26,8 @@ export default function Messages(){
 
     useEffect(()=>{
         getMessages()
-    })
+        console.log('h')
+    },[])
 
     const getMessages = ()=>{
         const url = URL + 'messages'
