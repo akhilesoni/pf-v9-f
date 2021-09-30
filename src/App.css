@@ -1,10 +1,12 @@
 :root{
-  --black:rgb(32, 32, 32);
+  --black:rgb(54, 54, 54);
   --border:rgba(0, 0, 0, 0.116);
   --gray:rgb(165, 165, 165);
   --lg:rgba(0, 0, 0, 0.020);
 }
-
+p{
+  color: var(--black);
+}
 .main{
   min-height: 70vh;
   max-width: 680px;
