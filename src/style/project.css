@@ -10,11 +10,13 @@
     background-color: white;
     border: 1px solid var(--border);
     border-radius: 7px;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 .p-n{
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 20px;
 }
 .p-c, .p-s{
     font-size: 14px;

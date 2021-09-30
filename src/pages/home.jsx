@@ -36,7 +36,6 @@ function Home(){
                 <p className='ht'>
                     Hi friends ! I am Akhlesh. I'm a software Engineer and simplistic. <br />
                 </p>
-                Currently I'm Studying computer science engineering from Shri shankaracharya technical campus, bhilai. I have worked in web dev domain for almost three year at Developer student club. I'm a good person.
             </div>
             <div className='blog-p'>
                 <p className='h'>

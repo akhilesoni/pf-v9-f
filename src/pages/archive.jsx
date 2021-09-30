@@ -35,8 +35,8 @@ function Archive(){
             </p>
 
             {links.map(link=>(
-                <div key={link.id} style={{margin:'20px 0',backgroundColor:'white',borderRadius:'7px',padding:'10px 20px',border:'1px solid var(--border'}}>
-                    <p style={{fontWeight:'600',fontSize:'17px',marginBottom:'20px'}}>{link.title}</p>
+                <div key={link.id} style={{margin:'20px 0',backgroundColor:'white',borderRadius:'7px',padding:'15px 20px',border:'1px solid var(--border'}}>
+                    <p style={{fontWeight:'500',fontSize:'17px',marginBottom:'20px',color:'var(--black'}}>{link.title}</p>
                     <a style={{color:'gray',fontSize:'14px'}} href={link.url}>go to website</a>
                 </div>
             ))}
